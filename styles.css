@@ -24,8 +24,8 @@ h1 {
 /* Product Container */
 .product-container {
     max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
+    margin: 20px auto;
+    padding: 0px;
     background-color: #FFB6C1;
     border-radius: 10px;
     /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
@@ -36,7 +36,7 @@ h1 {
     max-width: 300px;
     border: 2px solid #28282B;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 00px;
 }
 
 /* Product Description */
