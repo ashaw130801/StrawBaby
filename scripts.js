@@ -61,6 +61,18 @@ function addToVariantList() {
     }
 
     resetOptions();
+	document.getElementById("options").style.display = "none"; // Hide dropdowns
+}
+
+// Show dropdown options when quantity > 0
+function handleQuantityChange(quantity) {
+    const options = document.getElementById("options");
+    if (quantity > 0) {
+        options.style.display = "block";
+    } else {
+        options.style.display = "none"; // Hide options if quantity is 0
+        resetOptions();
+    }
 }
 
 // Reset options after adding
