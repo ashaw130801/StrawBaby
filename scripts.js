@@ -82,10 +82,21 @@ function resetOptions() {
     document.getElementById("addButton").disabled = true;
 }
 
-// Proceed to checkout (RazorPay integration)
+// Email validation regex
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+// Proceed to checkout (Validate email and integrate RazorPay)
 function proceedToCheckout() {
     let email = document.getElementById("email").value;
-    email ? alert("Proceeding to Checkout...") : alert("Please enter a valid email address.");
+    if (isValidEmail(email)) {
+        alert("Proceeding to Checkout...");
+        // RazorPay integration logic goes here
+    } else {
+        alert("Please enter a valid email address.");
+    }
 }
 
 // Check Add button when options change
